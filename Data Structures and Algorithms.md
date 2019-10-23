@@ -95,7 +95,12 @@ int tail = v.back();        // tail
 unsigned int size = v.size();
 
 // Iterate
-for(std::vector<int>::iterator it = v.begin(); it != v.end(); it++) {
+for(auto it = v.begin(); it != v.end(); ++it) {
+     
+    // Get index i, if needed.
+    auto i = std::distance(v.begin(), it); 
+   
+    // Access item at i
     std::cout << *it << std::endl;
 }
 
@@ -142,7 +147,7 @@ int tail = d.back();        // tail
 unsigned int size = d.size();
 
 // Iterate
-for(std::deque<int>::iterator it = d.begin(); it != d.end(); it++) {
+for(auto it = d.begin(); it != d.end(); ++it) {
     std::cout << *it << std::endl;
 }
 
@@ -198,7 +203,7 @@ int tail = l.back();                                            // tail
 unsigned int size = l.size();
 
 // Iterate
-for(std::list<int>::iterator it = l.begin(); it != l.end(); it++) {
+for(auto it = l.begin(); it != l.end(); ++it) {
     std::cout << *it << std::endl;
 }
 
@@ -292,7 +297,7 @@ std::string value = m.at("key");
 unsigned int size = m.size();
 
 // Iterate
-for(std::map<int>::iterator it = m.begin(); it != m.end(); it++) {
+for(auto it = m.begin(); it != m.end(); ++it) {
     std::cout << *it << std::endl;
 }
 
@@ -348,7 +353,7 @@ s.insert(20);
 unsigned int size = s.size();
 
 // Iterate
-for(std::set<int>::iterator it = s.begin(); it != s.end(); it++) {
+for(auto it = s.begin(); it != s.end(); ++it) {
     std::cout << *it << std::endl;
 }
 
