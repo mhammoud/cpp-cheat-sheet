@@ -45,8 +45,6 @@
 ![DataStructures](General/Data%20Structures.png "Data Structures")
 
 ![ComplexityChart](General/Complexity%20Chart.png "Complexity Chart")
-
-![DataStructureSelection](General/Data%20Structures%20Selection.png "Data Structures Selection")
 -------------------------------------------------------
 ### 1.2 Vector `std::vector`
 **Use for**
